@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Hello Bordeaux © 2018</title>
+     <meta name="description" content="DESCRIPTION">
+     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hamburgers-master/dist/hamburgers.css" >
+    <link rel="shortcut icon" href="./images/hellobordeauxlogo2(no).png">
+    <script type="text/javascript" src="/javascript/rellax-master/rellax.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>window.sr = ScrollReveal({ reset: true, duration: 750, rotate: { x: 0, y: 90, z: 0 }});</script>
+    <script src="./javascript/main.js"></script>
+ </head>
+
+ <body>
+
+   <nav id="nav">
+     <div class="logo">
+       <img src="./images/hellobordeauxlogo2.png" alt="">
+     </div>
+     <button id='menubutton' class="hamburger hamburger--spring" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<ul>
+  <li><a href="#">Home 🙂</a></li>
+  <li><a href="#">Tours ℹ️</a></li>
+  <li><a href="#">About 📓</a></li>
+  <li><a href="#">Contact 💌</a></li>
+</ul>
+
+</nav>
+
+<div class="rellax" id="shape1"><img src="./images/assets/Asset 4.svg" alt=""></div>
+<div class="rellax" id="shape2"><img src="./images/assets/Asset 5.svg" alt=""></div>
+<div class="rellax" id="shape3"><img src="./images/assets/Asset 6.svg" alt=""></div>
+<div class="rellax" id="shape4"><img src="./images/assets/Asset 7.svg" alt=""></div>
+<div class="rellax" id="shape5"><img src="./images/assets/Asset 8.svg" alt=""></div>
+<div class="rellax" id="shape6"><img src="./images/assets/Asset 9.svg" alt=""></div>
+<div class="rellax" data-rellax-speed="7" id="shape7"><img src="./images/HelloBordeauxLogo2white.svg" alt=""></div>
+
+<div id="main">
+  <h1 class="reveal">hello,</h1>
+  <p><span class="reveal">we do</span> <span class="reveal">free <span id="emoji">🚶🏼</span></span> <span class="reveal">tours.</span></p>
+  <p><span class="reveal">come</span> <span class="reveal">and join</span> <span class="reveal">us!</span> <span id="emoji">🙂</span></p>
+
+  <p class="reveal" id="videotext"><u><a href="https://www.youtube.com/watch?v=rHZQ95jPsOs&t" target="_blank">watch the video</a></u></p>
+
+  <!-- <iframe id="video" width="660" height="415" src="https://www.youtube.com/embed/rHZQ95jPsOs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+</div>
+
+<footer>
+  <p>made with ❤️by <a href="www.upstudio.xyz" target="_blank">up studio</a> © 2018</p>
+</footer>
+
+<script>
+var hamburger = document.querySelector(".hamburger");
+// On click
+hamburger.addEventListener("click", function() {
+  // Toggle class "is-active"
+  hamburger.classList.toggle("is-active");
+  // Do something else, like open/close menu
+  nav.classList.toggle("open");
+
+});
+
+  var rellax = new Rellax('.rellax', {
+    // center: true
+    callback: function(position) {
+        // callback every position change
+        console.log(position);
+    }
+  });
+
+
+  // Accepts any class name
+  // var rellax = new Rellax('.rellax');
+
+sr.reveal('.reveal');
+
+</script>
+</body>
+ </html>
