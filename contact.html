@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Bordeaux - Contact</title>
+    <meta name="Contact Hello Bordeaux Free Walking Tours" content="Contact Free Walking Tours Bordeaux">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/hamburgers-master/dist/hamburgers.css" >
+   <link rel="shortcut icon" href="./images/hellobordeauxlogo2(no).png">
+   <script type="text/javascript" src="/javascript/rellax-master/rellax.js"></script>
+   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+   <script>window.sr = ScrollReveal({ reset: true, duration: 750, rotate: { x: 0, y: 90, z: 0 }});</script>
+   <script src="./javascript/main.js"></script>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121880689-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121880689-1');
+</script>
+</head>
+
+<body>
+
+  <nav id="nav">
+    <div class="logo">
+      <img src="./images/hellobordeauxlogo2.png" alt="">
+    </div>
+    <button id='menubutton' class="hamburger hamburger--spring" type="button">
+ <span class="hamburger-box">
+   <span class="hamburger-inner"></span>
+ </span>
+</button>
+<ul>
+ <li><a href="/index.html">Home 🙂</a></li>
+ <li><a href="/tours.html">Tours ℹ️</a></li>
+ <li><a href="/about.html">About 📓</a></li>
+ <li><a href="/contact.html">Contact 💌</a></li>
+</ul>
+
+</nav>
+
+<div class="rellax" id="shape1"><img src="./images/assets/Asset 4.svg" alt=""></div>
+<div class="rellax" id="shape2"><img src="./images/assets/Asset 5.svg" alt=""></div>
+<div class="rellax" id="shape3"><img src="./images/assets/Asset 6.svg" alt=""></div>
+<!-- <div class="rellax" id="shape4"><img src="./images/assets/Asset 7.svg" alt=""></div>
+<div class="rellax" id="shape5"><img src="./images/assets/Asset 8.svg" alt=""></div>
+<div class="rellax" id="shape6"><img src="./images/assets/Asset 9.svg" alt=""></div> -->
+<!-- <div class="rellax" data-rellax-speed="7" id="shape7"><img src="./images/HelloBordeauxLogo2white.svg" alt=""></div> -->
+
+<div id="main">
+
+<h1 class="reveal">Contact <span id="emoji">💌</span></h1>
+<p class="text">
+  Send us an <a style="color: white;" href="mailto:hellobordeauxtours@gmail.com">email.</a> </br> <a style="color: white;" href="tel:+33616632760">Call us.</a>
+</p>
+ <!-- <iframe id="video" width="660" height="415" src="https://www.youtube.com/embed/rHZQ95jPsOs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+</div>
+
+<footer>
+
+</footer>
+
+<script>
+var hamburger = document.querySelector(".hamburger");
+// On click
+hamburger.addEventListener("click", function() {
+ // Toggle class "is-active"
+ hamburger.classList.toggle("is-active");
+ // Do something else, like open/close menu
+ nav.classList.toggle("open");
+
+});
+
+ var rellax = new Rellax('.rellax', {
+   // center: true
+   callback: function(position) {
+       // callback every position change
+       console.log(position);
+   }
+ });
+
+
+ // Accepts any class name
+ // var rellax = new Rellax('.rellax');
+
+sr.reveal('.reveal');
+
+</script>
+</body>
+</html>
