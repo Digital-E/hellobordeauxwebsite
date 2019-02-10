@@ -880,3 +880,15 @@ and (max-device-height: 812px) {
   }
 
 }
+
+.vex-content {
+  font-family: 'Circular Std Medium' !important;
+  background: #a4ddf0 !important;
+  color: white !important;
+  border: 2px solid white !important;
+}
+
+.vex.vex-theme-wireframe .vex-dialog-button.vex-dialog-button-primary {
+  background: #a4ddf0 !important;
+  border: 2px solid white !important;
+}

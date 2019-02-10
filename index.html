@@ -8,6 +8,10 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./javascript/vex-master/dist/js/vex.combined.min.js"></script>
+    <link rel="stylesheet" href="./javascript/vex-master/dist/css/vex.css" />
+    <link rel="stylesheet" href="./javascript/vex-master/dist/css/vex-theme-wireframe.css" />
+    <script>vex.defaultOptions.className = 'vex-theme-os'</script>
     <link rel="stylesheet" href="./css/hamburgers-master/dist/hamburgers.css" >
     <link rel="shortcut icon" href="./images/hellobordeauxlogo2(no).png">
     <script type="text/javascript" src="/javascript/rellax-master/rellax.js"></script>
@@ -91,6 +95,18 @@ hamburger.addEventListener("click", function() {
   // var rellax = new Rellax('.rellax');
 
 sr.reveal('.reveal');
+
+vex.dialog.alert({
+    message: 'Unfortunately Hello Bordeaux has ceased all activities, hope you still have a great time in the city!',
+    className: 'vex-theme-wireframe',
+    callback: function (value) {
+        if (value) {
+            console.log('🙃')
+        } else {
+            console.log('🙂')
+        }
+    }
+})
 
 </script>
 </body>
